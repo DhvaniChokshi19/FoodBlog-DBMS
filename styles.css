@@ -1,0 +1,106 @@
+body{
+  margin:0;
+  text-align: center;
+}
+.bottom-container{
+  position: relative;
+  max-width: 100%; /* Maximum width */
+  margin: 0 auto;
+  height: auto;
+}
+.title{
+  position: absolute;
+  bottom:0;
+  background:rgb(0,0,0);
+  background: rgba(0,0,0,0.5);
+  color:#f1f1f1;
+  width:100%;
+  padding:10px;
+  }
+.background-img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+h1{
+  font-size: 4rem;
+  color:white;
+  font-family: 'Allerta Stencil', sans-serif;
+}
+p{
+  font-size: 1.5rem;
+  color:white;
+  font-family:'Allerta Stencil',cursive;
+}
+.topnav{
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+.topnav a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: blue;
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:white;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.bottom-container:hover .image {
+  opacity: 0.5;
+}
+.bottom-container:hover .middle {
+  opacity: 1;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 18px;
+  padding: 16px 32px;
+}
