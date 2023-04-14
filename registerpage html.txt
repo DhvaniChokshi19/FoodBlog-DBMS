@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Page</title>
+</head>
+<body>
+	<h2>User Registration Form</h2>
+	<form method="post" action="register.php">
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username" required><br><br>
+		
+		<label for="phone">Phone Number:</label>
+		<input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+		
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required><br><br>
+		
+		<label for="confirm-password">Confirm Password:</label>
+		<input type="password" id="confirm-password" name="confirm-password" required><br><br>
+		
+		<label for="type">Type:</label>
+		<select id="type" name="type">
+			<option value="voter">Voter</option>
+			<option value="party">Party</option>
+		</select><br><br>
+		
+		<input type="submit" value="Register">
+	</form>
+</body>
+</html>
