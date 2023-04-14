@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Page</title>
+	<!-- Include Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+	<div class="container">
+		<h2>User Registration Form</h2>
+		<form method="post" action="register.php">
+			<div class="form-group">
+				<label for="username">Username:</label>
+				<input type="text" class="form-control" id="username" name="username" required>
+			</div>
+			
+			<div class="form-group">
+				<label for="phone">Phone Number:</label>
+				<input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{10}" required>
+			</div>
+			
+			<div class="form-group">
+				<label for="password">Password:</label>
+				<input type="password" class="form-control" id="password" name="password" required>
+			</div>
+			
+			<div class="form-group">
+				<label for="confirm-password">Confirm Password:</label>
+				<input type="password" class="form-control" id="confirm-password" name="confirm-password" required>
+			</div>
+			
+			<div class="form-group">
+				<label for="type">Type:</label>
+				<select class="form-control" id="type" name="type">
+					<option value="voter">Voter</option>
+					<option value="party">Party</option>
+				</select>
+			</div>
+			
+			<button type="submit" class="btn btn-primary">Register</button>
+		</form>
+	</div>
+
+	<!-- Include Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
